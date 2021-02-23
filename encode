@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cat kill-sticky.js |
+	sed 's/\/\/.*//g' |		# delete comments (WARN: doesn't respect strings, so don't use // inside strings)
+	sed -z 's/\n/ /g;s/,$/\n/' |	# newlines -> spaces
+	sed 's/\s\+/ /g' |		# multiple spaces to single space
+	python3 -c "import urllib.parse; print(urllib.parse.quote(input()))" |	# URL-encode
+	sed 's/^/javascript:/'		# prefix with "javascript:"
