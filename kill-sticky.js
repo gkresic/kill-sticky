@@ -8,7 +8,8 @@
 			elements[i].parentNode.removeChild(elements[i]);
 
 	var selectors = [
-		'aside.right-part',		// Index.hr right column
+		'aside.right-part',		// Index.hr right column 1
+		'div.right-part',		// Index.hr right column 2
 		'div.secondary-content',	// Bug.hr right column
 		'aside#slashboxes'		// Slashdot.org right column
 	];
