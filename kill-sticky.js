@@ -2,10 +2,12 @@
 
 	var i, elements = document.querySelectorAll('body *');
 
-	// all elements with style "position: fixed"
-	for (i = 0; i < elements.length; i++)
-		if (getComputedStyle(elements[i]).position === 'fixed')
+	// all elements with position 'fixed' or 'sticky'
+	for (i = 0; i < elements.length; i++) {
+		var style = getComputedStyle(elements[i]);
+		if (style.position === 'fixed' || style.position === 'sticky')
 			elements[i].parentNode.removeChild(elements[i]);
+	}
 
 	var selectors = [
 		'aside.right-part',		// Index.hr right column 1
