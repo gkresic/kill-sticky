@@ -12,6 +12,8 @@
 	var selectors = [
 		'aside.right-part',		// Index.hr right column 1
 		'div.right-part',		// Index.hr right column 2
+		'div.dfp-inarticle',		// Index.hr in-article ad
+		'div.ad-container',		// Index.hr below article ad
 		'div.secondary-content',	// Bug.hr right column
 		'aside#slashboxes'		// Slashdot.org right column
 	];
