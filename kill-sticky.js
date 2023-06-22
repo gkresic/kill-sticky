@@ -10,14 +10,15 @@
 	}
 
 	var selectors = [
-		'aside.right-part',		// Index.hr right column 1
-		'div.right-part',		// Index.hr right column 2
+		'aside.right-part',	// Index.hr right column 1
+		'div.right-part',	// Index.hr right column 2
 		'div.dfp-inarticle',	// Index.hr in-article ad
-		'div.ad-container',		// Index.hr below article ad
+		'div.ad-container',	// Index.hr below article ad
 		'div.secondary-content',// Bug.hr right column
-		'div.banner-slot',		// Telegram in-article banners
+		'div.banner-slot',	// Telegram in-article banners
 		'div#intext_premium',	// Telegram in-article banners
-		'aside#slashboxes'		// Slashdot.org right column
+		'aside#slashboxes',	// Slashdot.org right column
+		'span.ezoic-ad'		// PlantUML.com
 	];
 
 	for (s = 0; s < selectors.length; s++) {
