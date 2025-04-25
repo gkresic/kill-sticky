@@ -18,6 +18,7 @@
 		'div.secondary-content',// Bug.hr right column
 		'div.banner-slot',	// Telegram in-article banners
 		'div#intext_premium',	// Telegram in-article banners
+		'div#intext_midas',	// Telegram in-article banners
 		'aside#slashboxes',	// Slashdot.org right column
 		'span.ezoic-ad'		// PlantUML.com
 	];
